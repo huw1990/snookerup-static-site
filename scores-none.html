@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <title>SnookerUp</title>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-50">
+    <main class="flex-grow">
+    <nav class="bg-green-700 border-b border-green-500">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+            <a class="flex flex-shrink-0 items-center mr-4" href="index.html">
+              <img
+                class="h-10 w-auto"
+                src="images/snookerup_logo.png"
+                alt="React Jobs"
+              />
+              <span class="hidden md:block text-white text-2xl font-bold ml-2">SnookerUp</span>
+            </a>
+            <div class="md:ml-auto">
+              <div class="flex space-x-2">
+                <a
+                  href="index.html"
+                  class="text-white bg-green-800 hover:bg-green-950 hover:text-white rounded-md px-3 py-2"
+                  >Home</a
+                >
+                <a
+                  href="routines.html"
+                  class="text-white hover:bg-green-950 hover:text-white rounded-md px-3 py-2"
+                  >Routines</a
+                >
+                <a
+                  href="login.html"
+                  class="text-white hover:bg-green-950 hover:text-white rounded-md px-3 py-2 border-solid border-2 border-green-800"
+                  >Log In / Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-gray-50 px-4 py-10">
+      <div class="container-xl lg:container m-auto">
+        <h2 class="text-3xl font-bold text-black mb-10 text-center">
+          Scores
+        </h2>
+        <div class="text-center">
+          <div class="inline text-center py-6 border-solid border-2 rounded-md border-green-800">
+            <p class="inline ml-6">Routine:</p>
+            <p class="inline border-solid border-2 rounded-md border-gray-300 p-2 px-6 mx-6">Clearing the Colours</p>
+          </div>
+          <form class="inline p-4">
+            <div class="inline text-center py-6 border-solid border-2 rounded-md border-green-800">
+              <p class="inline ml-6">From:</p>
+              <input class="mx-4" type="datetime-local" id="from-date-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" />
+              <p class="inline">To:</p>
+              <input class="mx-4" type="datetime-local" id="from-date-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" />
+            </div>
+            <div class="inline px-6 py-6 mx-4 border-solid border-2 rounded-md border-green-800">
+              <input id="loop" type="checkbox" value="" class="align-middle w-6 h-6 accent-green-700">
+              <label for="loop" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">In a loop?</label>
+              <input id="cushion_limit" type="checkbox" value="" class="ml-6 align-middle w-6 h-6 accent-green-700">
+              <label for="cushion_limit" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cushion limit?</label>
+              <label for="cushions" class="ml-6 mr-2 text-sm font-medium leading-6 text-gray-900">Max number of cushions</label>
+              <input id="cushions" name="cushions" type="number" class="inline px-4 w-10 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </form>
+        </div>
+        <p class="text-2xl p-20 text-center text-green-800 font-bold">No scores to show</p>
+      </div>
+    </section>
+  </main>
+    <footer class="sticky top-[100vh] bg-green-700 border-b border-green-500">
+      <p class="text-center text-white p-5">SnookerUp &#169; 2024. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
